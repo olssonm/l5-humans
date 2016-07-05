@@ -34,6 +34,16 @@ class HumansTest extends \Orchestra\Testbench\TestCase {
     }
 
 	/**
+	 * Test a default visit using named route
+	 * @test
+	 */
+    public function testVisitDefaultNamed()
+    {
+        $this->visit(route('humans.txt'))
+            ->see('This is the default humans.txt-template');
+    }
+
+	/**
 	 * Test to publish vendor assets
 	 * @test
 	 */
@@ -72,6 +82,16 @@ class HumansTest extends \Orchestra\Testbench\TestCase {
     public function testVisitInstalled()
     {
         $this->visit('/humans.txt')
+            ->see('Developer: Joe Doe');
+    }
+
+	/**
+	 * Test an installed visit
+	 * @test
+	 */
+    public function testVisitInstalledNamed()
+    {
+        $this->visit(route('humans.txt'))
             ->see('Developer: Joe Doe');
     }
 

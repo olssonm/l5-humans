@@ -1,7 +1,6 @@
 <?php
 
-    Route::get('humans.txt', function () {
-        return response()
-            ->view('humans::humans')
-            ->header('Content-Type', 'text/plain');
-    });
+    Route::get('humans.txt', [
+        'as' => 'humans.txt',
+        'uses' => 'Olssonm\Humans\Http\Controllers\HumansController@humans'
+    ]);

@@ -37,7 +37,13 @@ The view is located in your views-folder `/humans/humans.blade.php`.
 It's also valid to put this in your `<head>`:
 
 ``` html
-<link type="text/plain" rel="author" href="http://domain/humans.txt" />
+<link type="text/plain" rel="author" href="http://domain.com/humans.txt" />
+```
+
+If you by any chance need to access your `humans.txt` via a named route, that's also possible:
+
+``` html
+<link type="text/plain" rel="author" href="{{ route('humans.txt') }}" />
 ```
 
 ## Learn more

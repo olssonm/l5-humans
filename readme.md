@@ -6,7 +6,14 @@
 
 Stop polluting your customers footers with a "made by my agency so I put a cheap link in the footer"-link – that footer is your customers property. Instead, if you want credit – add a simple humans.txt.
 
-All this package does is to add a route for `/humans.txt` and the associated view. "Why would I ever need a package for a simple thing like this?" you wonder? Well, so did I until I had done it over 20 times – it just saves a few minutes which adds up over time.
+All this package does is to add a route for `/humans.txt` and the associated view. "*Why would I ever need a package for a simple thing like this?*" you wonder? Well, so did I until I had done it over 20 times – it just saves a few minutes which adds up over time.
+
+## Version Compatibility
+
+ Laravel  | l5-humans
+:---------|:----------
+ 5.2.x    | 1.x
+ 5.3.x    | 2.x
 
 ## Install
 

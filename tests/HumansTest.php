@@ -7,41 +7,44 @@ use Artisan;
 
 class HumansTest extends \Orchestra\Testbench\TestCase {
 
+	/**
+	 * Setup
+	 */
 	public function setUp()
-    {
-        parent::setUp();
-    }
+	{
+		parent::setUp();
+	}
 
-    /**
-     * Load the package
-     * @return array the packages
-     */
-    protected function getPackageProviders($app)
-    {
-        return [
-            'Olssonm\Humans\ServiceProvider'
-        ];
-    }
+	/**
+	 * Load the package
+	 * @return array the packages
+	 */
+	protected function getPackageProviders($app)
+	{
+		return [
+			'Olssonm\Humans\ServiceProvider'
+		];
+	}
 
 	/**
 	 * Test a default visit
 	 * @test
 	 */
-    public function testVisitDefault()
-    {
-        $this->visit('/humans.txt')
-            ->see('This is the default humans.txt-template');
-    }
+	public function testVisitDefault()
+	{
+		$this->visit('/humans.txt')
+			->see('This is the default humans.txt-template');
+	}
 
 	/**
 	 * Test a default visit using named route
 	 * @test
 	 */
-    public function testVisitDefaultNamed()
-    {
-        $this->visit(route('humans.txt'))
-            ->see('This is the default humans.txt-template');
-    }
+	public function testVisitDefaultNamed()
+	{
+		$this->visit(route('humans.txt'))
+			->see('This is the default humans.txt-template');
+	}
 
 	/**
 	 * Test to publish vendor assets
@@ -79,21 +82,21 @@ class HumansTest extends \Orchestra\Testbench\TestCase {
 	 * Test an installed visit
 	 * @test
 	 */
-    public function testVisitInstalled()
-    {
-        $this->visit('/humans.txt')
-            ->see('Developer: Joe Doe');
-    }
+	public function testVisitInstalled()
+	{
+		$this->visit('/humans.txt')
+			->see('Developer: Joe Doe');
+	}
 
 	/**
 	 * Test an installed visit
 	 * @test
 	 */
-    public function testVisitInstalledNamed()
-    {
-        $this->visit(route('humans.txt'))
-            ->see('Developer: Joe Doe');
-    }
+	public function testVisitInstalledNamed()
+	{
+		$this->visit(route('humans.txt'))
+			->see('Developer: Joe Doe');
+	}
 
 	/**
 	 * Tear down and remove files

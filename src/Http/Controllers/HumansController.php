@@ -6,6 +6,10 @@ use Illuminate\Routing\Controller;
 
 class HumansController extends Controller
 {
+    /**
+     * Return a text/plain-response with humans-view
+     * @return response
+     */
     public function humans()
     {
         return response()

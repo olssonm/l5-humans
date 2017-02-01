@@ -5,7 +5,7 @@ use Illuminate\Http\JsonResponse;
 
 use Artisan;
 
-class HumansTest extends \Orchestra\Testbench\TestCase {
+class HumansTest extends \Orchestra\Testbench\BrowserKit\TestCase {
 
 	/**
 	 * Setup

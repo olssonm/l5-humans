@@ -10,11 +10,12 @@ All this package does is to add a route for `/humans.txt` and the associated vie
 
 ## Version Compatibility
 
- Laravel  | l5-humans
-:---------|:----------
- 5.2.x    | 1.x
- 5.3.x    | 2.x
- 5.4.x    | 3.x
+ Laravel        | l5-humans
+:---------------|:----------
+ 5.2.x          | 1.x
+ 5.3.x          | 2.x
+ 5.4.x          | 3.x
+ 5.4.x/5.5.x    | 4.x
 
 ## Install
 
@@ -24,7 +25,7 @@ Install via composer:
 $ composer require olssonm/l5-humans
 ```
 
-Add the service provider to your `app.php`:
+In Laravel > 5.5 the service provider will be automatically added. You can alseo add the service provider to your `app.php` manually:
 
 ``` php
 'providers' => [
@@ -37,6 +38,14 @@ Publish the view:
 ``` bash
 $ php artisan vendor:publish --provider="Olssonm\Humans\ServiceProvider"
 ```
+
+Or by just typing:
+
+``` bash
+$ php artisan vendor:publish
+```
+
+And selecting `Olssonm\Humans\ServiceProvider`.
 
 ## Make it your own
 

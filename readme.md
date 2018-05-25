@@ -4,7 +4,7 @@
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-travis]][link-travis]
 
-![humans](https://user-images.githubusercontent.com/907114/40529406-e67e91d4-5ff4-11e8-96d8-758f70b5ffdf.png)
+![l5-humans](https://user-images.githubusercontent.com/907114/40529961-3e562f5a-5ff7-11e8-8eeb-00164e400e77.png)
 
 Stop polluting your customers footers with a "made by my agency so I put a cheap link in the footer"-link – that footer is your customers property. Instead, if you want credit – add a simple humans.txt.
 

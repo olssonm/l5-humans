@@ -17,12 +17,12 @@
     ],
     "require": {
         "php": "^7.0",
-        "illuminate/support": "~5.5|~5.6"
+        "illuminate/support": "~5.5|~5.6|~5.7"
     },
     "require-dev": {
         "phpunit/phpunit" : "5.7.*|~6.0|~7.0",
-        "orchestra/testbench": "~3.5|~3.6",
-        "orchestra/testbench-browser-kit": "~3.5|~3.6"
+        "orchestra/testbench": "~3.5|~3.6|~3.7",
+        "orchestra/testbench-browser-kit": "~3.5|~3.6|~3.7"
     },
     "autoload": {
         "psr-4": {

@@ -10,7 +10,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     public function boot(\Illuminate\Routing\Router $router)
     {
         // Unless routes are cached, load the routes.php-file
-        if (! $this->app->routesAreCached()) {
+        if (!$this->app->routesAreCached()) {
             require __DIR__ . '/Http/routes.php';
         }
 

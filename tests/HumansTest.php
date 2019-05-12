@@ -10,7 +10,7 @@ class HumansTest extends \Orchestra\Testbench\BrowserKit\TestCase {
 	/**
 	 * Setup
 	 */
-	public function setUp()
+	public function setUp(): void
 	{
 		parent::setUp();
 	}
@@ -101,7 +101,7 @@ class HumansTest extends \Orchestra\Testbench\BrowserKit\TestCase {
 	/**
 	 * Tear down and remove files
 	 */
-	public static function tearDownAfterClass()
+	public static function tearDownAfterClass(): void
 	{
 		unlink(base_path('resources/views') . '/vendor/humans/humans.blade.php');
 		rmdir(base_path('resources/views') . '/vendor/humans');

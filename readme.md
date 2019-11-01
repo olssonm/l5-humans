@@ -1,4 +1,4 @@
-# Laravel 5 Humans.txt
+# Laravel 5/6 Humans.txt
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -22,7 +22,7 @@ Install via composer:
 $ composer require olssonm/l5-humans
 ```
 
-In Laravel > 5.5 the service provider will be automatically added. You can also add the service provider to your `app.php` manually:
+Since Laravel > 5.5 the service provider will be automatically added. You can also add the service provider to your `app.php` manually:
 
 ``` php
 'providers' => [
@@ -80,7 +80,7 @@ $ phpunit
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-© 2018 [Marcus Olsson](https://marcusolsson.me).
+© 2019 [Marcus Olsson](https://marcusolsson.me).
 
 [ico-version]: https://img.shields.io/packagist/v/olssonm/l5-humans.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square

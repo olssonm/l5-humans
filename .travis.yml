@@ -17,5 +17,5 @@ matrix:
       env: ILLUMINATE_VERSION=^6.0
     - php: 7.3
       env: ILLUMINATE_VERSION=^6.0
-    - php: 7.4
+    - php: nightly
       env: ILLUMINATE_VERSION=^6.0

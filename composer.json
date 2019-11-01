@@ -21,7 +21,7 @@
     },
     "require-dev": {
         "orchestra/testbench": "^4.0",
-        "orchestra/testbench-browser-kit": "^4.3",
+        "orchestra/testbench-browser-kit": "^4.0",
         "phpunit/phpunit": "^8.4"
     },
     "autoload": {

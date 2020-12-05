@@ -1,4 +1,4 @@
-# Laravel 5/6 Humans.txt
+# Laravel humans.txt
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -16,21 +16,13 @@ See [COMPATABILITY.md](COMPATABILITY.md) for full a full compatability chart. El
 
 ## Install
 
-Install via composer:
+**Install via composer:**
 
 ``` bash
 $ composer require olssonm/l5-humans
 ```
 
-Since Laravel > 5.5 the service provider will be automatically added. You can also add the service provider to your `app.php` manually:
-
-``` php
-'providers' => [
-    Olssonm\Humans\ServiceProvider::class
-]
-```
-
-Publish the view:
+**Publish the view:**
 
 ``` bash
 $ php artisan vendor:publish --provider="Olssonm\Humans\ServiceProvider"
@@ -80,10 +72,10 @@ $ phpunit
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-© 2019 [Marcus Olsson](https://marcusolsson.me).
+© 2020 [Marcus Olsson](https://marcusolsson.me).
 
 [ico-version]: https://img.shields.io/packagist/v/olssonm/l5-humans.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/olssonm/l5-humans/master.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/com/olssonm/l5-humans/master.svg?style=flat-square
 [link-packagist]: https://packagist.org/packages/olssonm/l5-humans
-[link-travis]: https://travis-ci.org/olssonm/l5-humans
+[link-travis]: https://travis-ci.com/olssonm/l5-humans

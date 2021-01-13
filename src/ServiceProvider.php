@@ -1,4 +1,6 @@
-<?php namespace Olssonm\Humans;
+<?php
+
+namespace Olssonm\Humans;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
